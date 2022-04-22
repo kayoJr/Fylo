@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #1c2431;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  z-index: -1;
+}
+
+body a, body h1, body h2, body h3 {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.home-section nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.home-section nav .logo img {
+  width: 80%;
+}
+
+.home-section nav .links ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-section nav .links ul li {
+  margin-left: 2rem;
+}
+
+.home-section nav .links ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.home-section nav .links ul a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.home-section .home-texts {
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 21;
+}
+
+.home-section .home-texts img {
+  width: 35%;
+}
+
+.home-section .home-texts h1 {
+  padding: 2rem 0 1rem 0;
+}
+
+.home-section .home-texts h3 {
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.home-section .home-texts .btn-get_started {
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+  padding: 15px 80px;
+  border-radius: 50px;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 23rem;
+  z-index: 10;
+}
+
+.wave img {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0 calc(-50vw + 50%);
+}
+/*# sourceMappingURL=style.css.map */
