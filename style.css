@@ -144,7 +144,7 @@ nav .logo img {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin: 10rem 3rem;
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
 }
 .testimonial .quote{
   position: absolute;
@@ -209,11 +209,12 @@ footer{
   background: hsl(216, 53%, 9%);
   color: #fff;
   padding-top: 15rem;
+  padding-bottom: 3rem;
   position: relative;
 }
 .footer-elements{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, .3fr);
   grid-gap: 2rem;
   margin-top: 2rem;
 }
