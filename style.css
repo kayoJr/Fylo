@@ -180,9 +180,7 @@ nav .logo img {
   margin-bottom: 5rem;
   position: absolute;
   top: -8rem;
-  right: 50%;
-  left: 28rem;
-  
+  left: 12%;
 }
 .early-access h1, 
 .early-access p{
@@ -216,7 +214,13 @@ footer{
   display: grid;
   grid-template-columns: repeat(5, .3fr);
   grid-gap: 2rem;
-  margin-top: 2rem;
+  margin: 2rem;
+}
+footer .logo{
+  margin-left: 2rem;
+}
+footer .logo img{
+  width: 10%;
 }
 .location{
   display: flex;
