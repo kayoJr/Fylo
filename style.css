@@ -256,7 +256,7 @@ footer .logo img{
   color: aqua;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 457px) {
   nav{
     margin: 0 1rem;
   }
