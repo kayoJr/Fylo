@@ -61,6 +61,7 @@ nav .logo img {
 }
 .home-texts h1 {
   padding: 2rem 0 1rem 0;
+  width: 35%;
 }
 .home-texts h3 {
   font-weight: 400;
@@ -253,4 +254,85 @@ footer .logo img{
 .social a:hover{
   border-color: hsl(176, 68%, 64%);
   color: aqua;
+}
+
+@media (max-width: 375px) {
+  nav{
+    margin: 0 1rem;
+  }
+  nav .links ul li {
+    margin-left: 1rem;
+  }
+  nav .links{
+    width: 68%;
+  }
+  nav .logo img{
+    width: 50%;
+  }
+  .home-section{
+    height: 50vh;
+  }
+  .home-texts{
+    margin: 0 1rem;
+  }
+  .home-texts img{
+    width: 90%;
+  }
+  .home-texts h1{
+    width: 100%;
+  }
+  .features-section{
+    padding-top: 25rem;
+    grid-template-columns: 1fr;
+  }
+  .productive-section{
+    flex-direction: column;
+    margin: 10rem 2rem;
+  }
+  .productive-section .detail{
+    width: 100%;
+  }
+  .productive-section .illustration img{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .testimonial{
+    grid-template-columns: 1fr;
+    margin: 15rem 20px;
+  }
+  .testimonial .quote{
+    left: 0;
+  }
+  .early-access{
+    width: 90%;
+    padding: 1rem;
+  }
+  .early-access h1,
+  .early-access p{
+    padding: 1rem 0;
+  }
+  .early-access form input[type='email']{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .early-access form input[type='submit']{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .footer-elements{
+    grid-template-columns: 1fr;
+  }
+  footer .logo{
+    padding-top: 5rem;
+  }
+  footer .logo img{
+    width: 50%;
+  }
+  .social{
+    margin: 0 auto;
+  }
 }
