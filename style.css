@@ -1,111 +1,171 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 body {
-  background-color: #1c2431;
+  background-color: hsl(218, 28%, 13%);
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-  position: relative;
-  z-index: -1;
+  font-family: "Open Sans", sans-serif;
 }
-
-body a, body h1, body h2, body h3 {
-  font-family: 'Raleway', sans-serif;
-  text-decoration: none;
+body a,
+h1,
+h2,
+h3,
+p {
   color: #fff;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
 }
-
+body ul {
+  list-style: none;
+}
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
 
-.home-section nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.home-section {
+  background: hsl(217, 28%, 15%);
+  height: 90vh;
+  position: relative;
+}
+nav {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 2rem 0;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rem;
+  padding-top: 1rem;
 }
-
-.home-section nav .logo img {
-  width: 80%;
-}
-
-.home-section nav .links ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
+nav .links ul {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-
-.home-section nav .links ul li {
+nav .links ul li {
   margin-left: 2rem;
 }
-
-.home-section nav .links ul a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.home-section nav .links ul a:hover {
+nav .links ul li a:hover {
   text-decoration: underline;
-  font-weight: 700;
 }
-
-.home-section .home-texts {
-  color: #fff;
-  display: -ms-grid;
+nav .logo img {
+  width: 80%;
+}
+.home-texts {
   display: grid;
   place-items: center;
   text-align: center;
   position: relative;
-  z-index: 21;
+  z-index: 20;
 }
-
-.home-section .home-texts img {
-  width: 35%;
+.home-texts img {
+  width: 40%;
 }
-
-.home-section .home-texts h1 {
+.home-texts h1 {
   padding: 2rem 0 1rem 0;
 }
-
-.home-section .home-texts h3 {
+.home-texts h3 {
   font-weight: 400;
   padding-bottom: 2rem;
 }
-
-.home-section .home-texts .btn-get_started {
-  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
-  background: linear-gradient(to right, #65e2d9, #339ecc);
+.home-texts .btn-get-started {
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
   padding: 15px 80px;
   border-radius: 50px;
 }
-
 .wave {
   position: absolute;
-  left: 0;
   right: 0;
-  top: 23rem;
+  left: 0;
+  top: 15rem;
+  bottom: 0;
   z-index: 10;
+  overflow-x: hidden;
 }
-
 .wave img {
+  position: absolute;
+  bottom: 0;
   width: 100vw;
   max-width: 100vw;
   margin: 0 calc(-50vw + 50%);
 }
-/*# sourceMappingURL=style.css.map */
+
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding-top: 5rem;
+}
+.features-section .box {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+.box h1 {
+  margin: 1rem 0 8px 0;
+}
+.box p {
+  line-height: 25px;
+}
+
+.productive-section {
+  /* display: grid;
+  grid-template-columns: 2fr 2fr;
+  place-items: center; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5rem;
+}
+.productive-section .detail{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-self: flex-start;
+}
+.productive-section .detail h1, p{
+  padding-bottom: 1rem;
+  line-height: 25px;
+}
+.productive-section .detail h1{
+  line-height: 35px;
+}
+.productive-section .detail a{
+  color: hsl(176, 68%, 64%);
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+.productive-section .detail a:hover{
+  color: hsl(0, 0%, 100%);
+}
+
+.testimonial{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin: 10rem 3rem;
+}
+.testimonial .quote{
+  position: absolute;
+  z-index: -1;
+  top: -2.5rem;
+  left: -1rem;
+}
+.testimonial .box{
+  background: hsl(217, 28%, 15%);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.testimonial .box .person{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.testimonial .box .person img{
+  width: 10%;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.testimonial .box .person .name p {
+  padding-bottom: 0px;
+}
