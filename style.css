@@ -65,6 +65,7 @@ nav .logo img {
 }
 .home-texts h3 {
   font-weight: 400;
+  padding: 0 30rem;
   padding-bottom: 2rem;
   line-height: 25px;
 }
@@ -100,7 +101,7 @@ nav .logo img {
   display: grid;
   place-items: center;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 10rem;
 }
 .box h1 {
   margin: 1rem 0 8px 0;
@@ -123,6 +124,7 @@ nav .logo img {
   flex-direction: column;
   align-items: flex-start;
   justify-self: flex-start;
+  padding: 0 6rem;
 }
 .productive-section .detail h1, p{
   padding-bottom: 1rem;
@@ -175,9 +177,10 @@ nav .logo img {
 
 .early-access{
   background-color: hsl(217, 28%, 15%);
-  padding: 2rem;
+  padding: 2rem 5rem;
+  overflow-wrap: break-word;
   text-align: center;
-  width: fit-content;
+  width: 900px;
   border-radius: 10px;
   margin-bottom: 5rem;
   position: absolute;
@@ -189,7 +192,7 @@ nav .logo img {
 }
 .early-access h1, 
 .early-access p{
-  padding: 1rem 10rem;
+  padding: 1rem 0;
 }
 .early-access form input[type='email']{
   padding: 1rem;
@@ -281,9 +284,17 @@ footer .logo img{
   .home-texts h1{
     width: 100%;
   }
+  .home-texts h3{
+    padding: 0;
+    padding-bottom: 2rem;
+  }
   .features-section{
-    padding-top: 25rem;
+    padding-top: 23rem;
     grid-template-columns: 1fr;
+  }
+  .features-section .box{
+    padding: 1rem 0;
+    margin: 0 2rem;
   }
   .productive-section{
     flex-direction: column;
@@ -291,6 +302,7 @@ footer .logo img{
   }
   .productive-section .detail{
     width: 100%;
+    padding: 0;
   }
   .productive-section .illustration img{
     width: 100%;
@@ -304,7 +316,7 @@ footer .logo img{
     left: 0;
   }
   .early-access{
-    width: 90%;
+    width: 80%;
     padding: 1rem;
   }
   .early-access h1,
