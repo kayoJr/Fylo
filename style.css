@@ -180,7 +180,10 @@ nav .logo img {
   margin-bottom: 5rem;
   position: absolute;
   top: -8rem;
-  left: 12%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 .early-access h1, 
 .early-access p{
