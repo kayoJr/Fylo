@@ -65,6 +65,7 @@ nav .logo img {
 .home-texts h3 {
   font-weight: 400;
   padding-bottom: 2rem;
+  line-height: 25px;
 }
 .home-texts .btn-get-started {
   background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
