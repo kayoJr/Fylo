@@ -144,6 +144,7 @@ nav .logo img {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin: 10rem 3rem;
+  margin-bottom: 20rem;
 }
 .testimonial .quote{
   position: absolute;
@@ -152,7 +153,7 @@ nav .logo img {
   left: -1rem;
 }
 .testimonial .box{
-  background: hsl(217, 28%, 15%);
+  background: hsl(219, 30%, 18%);
   padding: 2rem;
   border-radius: 10px;
 }
@@ -168,4 +169,79 @@ nav .logo img {
 }
 .testimonial .box .person .name p {
   padding-bottom: 0px;
+}
+
+.early-access{
+  background-color: hsl(217, 28%, 15%);
+  padding: 2rem;
+  text-align: center;
+  width: fit-content;
+  border-radius: 10px;
+  margin-bottom: 5rem;
+  position: absolute;
+  top: -8rem;
+  right: 50%;
+  left: 28rem;
+  
+}
+.early-access h1, 
+.early-access p{
+  padding: 1rem 10rem;
+}
+.early-access form input[type='email']{
+  padding: 1rem;
+  width: 60%;
+  border: none;
+  border-radius: 50px;
+}
+.early-access form input[type='submit']{
+  padding: 1rem;
+  width: 25%;
+  border: none;
+  border-radius: 50px;
+  margin-left: 1rem;
+  background: linear-gradient(to left, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
+  color: #fff;
+  cursor: pointer;
+}
+
+footer{
+  background: hsl(216, 53%, 9%);
+  color: #fff;
+  padding-top: 15rem;
+  position: relative;
+}
+.footer-elements{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+.location{
+  display: flex;
+}
+.location img{
+  width: 15%;
+  height: 20%;
+  margin-right: 1rem;
+}
+.contact div{
+  display: flex;
+  align-items: center;
+}
+.contact div img{
+  margin-right: 1rem;
+}
+.links ul li{
+  margin-bottom: 1rem;
+}
+.social a{
+  border: 1px solid;
+  padding: 8px;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+.social a:hover{
+  border-color: hsl(176, 68%, 64%);
+  color: aqua;
 }
